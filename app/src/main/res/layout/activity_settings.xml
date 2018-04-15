@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="auhack.epinoodle.convertit.Settings">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type in currency codes to begin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to convert from..."
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/conv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="DKK"
+        android:minWidth="160dp"
+        android:maxLength="3"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="...to "
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/conv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLength="3"
+        android:hint="GBP"
+        android:minWidth="160dp"
+        android:layout_margin="20dp"/>
+    <ImageButton
+        android:layout_margin="30dp"
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:background="#fff"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cont"
+        android:scaleType="fitCenter"
+        android:onClick="cont"/>
+
+
+
+</LinearLayout>
